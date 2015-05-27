@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CV de Marie</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_work_xp">Expérience pro</string>
+    <string name="title_formation">Formation</string>
+    <string name="title_interests">Hobbys</string>
+    <string name="title_skills">Compétences</string>
+</resources>
