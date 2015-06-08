@@ -1,4 +1,13 @@
 <resources>
+
+    <string-array name="drawer_menu">
+        <item>@string/title_home</item>
+        <item>@string/title_work_xp</item>
+        <item>@string/title_formation</item>
+        <item>@string/title_skills</item>
+        <item>@string/title_interests</item>
+    </string-array>
+
     <string name="title_home">Home</string>
     <string name="title_work_xp">Work Xp</string>
     <string name="title_formation">Formation</string>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--  colors of old design, will change overtime -->
+    
+    <!-- main color references -->
+	<color name="transparent">#00000000</color> 
+	<color name="transparent_white">#26FFFFFF</color> 
+	<color name="transparent_green">#CC7DF082</color>
+	<color name="transparent_white_60">#99FFFFFF</color>
+	<color name="transparent_black">#4D000000</color> 
+	<color name="transparent_black_1A">#1A000000</color> 
+	<color name="transparent_red_15">#26EA5C64</color>
+	<color name="transparent_red_35">#59EA5C64</color>
+		
+	<color name="gray_light">#F6F7F8</color> 	
+	<color name="gray_medium">#CACBCC</color> 	
+	<color name="gray_dark">#8E9DA1</color> 
+    <color name="gray_bg_bt">#EAEBEC</color>
+	
+	<color name="white">#FFF</color>
+	<color name="black">#000</color>
+	<color name="black80">#C000</color>
+
+	<color name="yellow">#ECFF7D</color> 
+	<color name="green">#7DF082</color> 
+	<color name="red">#EA5C64</color>
+	<color name="light_red">#FF8080</color>
+	<color name="orange">#F9BE62</color>
+	<color name="gray">#DFE0E1</color>
+
+	
+<!-- 	
+	<color name="gray_light_a50">#80F1ECE8</color>     	
+	<color name="color_white_a50">#80FFFFFF</color>
+	<color name="color_black_a50">#80000000</color> 
+-->
+	
+	
+	
+	<!-- used colors -->
+   	<color name="text_main">@color/black</color>	
+   	
+   	<color name="text_main_light">@color/white</color>	
+   	<color name="text_titles">@color/white</color>
+   	<color name="text_buttons">@color/red</color>	
+   	<color name="text_inputs">@color/red</color>	
+
+   	<color name="text_hint">@color/gray_dark</color>	
+   	<color name="text_inactive">@color/gray_dark</color>	
+   	<color name="text_secondary">@color/gray_dark</color>	
+   	
+   	<color name="text_selected">@color/red</color>	
+   	<color name="text_alert">@color/red</color>	
+
+   	<color name="text_highlighted">@color/yellow</color>	
+   	<color name="text_alert_message">@color/yellow</color>	
+   	
+	<color name="bg">@color/gray_light</color>
+    <color name="bg_input">@color/white</color>
+    <color name="bg_chat">@color/gray_medium</color>
+    <color name="bg_bookings">@color/gray_medium</color>
+    <color name="bg_bt_header">@color/light_red</color>
+    
+    <color name="line_main">@color/gray_medium</color>
+    <color name="line_light">@color/white</color>
+	
+</resources>

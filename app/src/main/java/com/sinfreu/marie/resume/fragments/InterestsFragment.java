@@ -1,7 +1,7 @@
-package com.sinfreu.marie.resume;
+package com.sinfreu.marie.resume.fragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -9,21 +9,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.sinfreu.marie.resume.R;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
  * design guidelines</a> for a complete explanation of the behaviors implemented here.
  */
-public class WorkXpDetailsFragment extends Fragment {
+public class InterestsFragment extends Fragment {
 
-	public WorkXpDetailsFragment() {
+	public InterestsFragment() {
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
 		View rootView = inflater.inflate(
-				R.layout.fragment_work_xp_details, container, false);
+				R.layout.fragment_interests, container, false);
 
 		return rootView;
 	}

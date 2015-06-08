@@ -1,4 +1,4 @@
-package com.sinfreu.marie.resume;
+package com.sinfreu.marie.resume.fragments;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
@@ -20,7 +20,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.sinfreu.marie.resume.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
