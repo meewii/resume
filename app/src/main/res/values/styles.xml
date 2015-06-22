@@ -1,24 +1,24 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
-        <item name="android:actionBarStyle">@style/BookerActionBar</item>
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
         <!--<item name="android:actionBarSize">@dimen/height_header</item>-->
     </style>
 
     <!-- ActionBar styles -->
-    <style name="BookerActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@color/green</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_header</item>
         <!--<item name="android:paddingTop">0dp</item>-->
         <!--<item name="android:paddingBottom">0dp</item>-->
         <!--<item name="android:scaleType">fitStart</item>-->
-        <!--<item name="android:titleTextStyle">@style/BookerActionBarTitleText</item>-->
+        <!--<item name="android:titleTextStyle">@style/ActionBarTitleText</item>-->
     </style>
 
     <!-- ActionBar title text -->
-    <style name="BookerActionBarTitleText">
+    <style name="ActionBarTitleText">
         <item name="android:textColor">@color/text_titles</item>
         <item name="android:textSize">@dimen/fz_xlarge</item>
     </style>

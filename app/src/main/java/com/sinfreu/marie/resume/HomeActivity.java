@@ -26,8 +26,6 @@ import com.sinfreu.marie.resume.fragments.InterestsFragment;
 import com.sinfreu.marie.resume.fragments.SkillsFragment;
 import com.sinfreu.marie.resume.fragments.WorkXpFragment;
 
-// https://www.codeofaninja.com/2014/02/android-navigation-drawer-example.html
-
 public class HomeActivity extends Activity {
 
 	private String LOG_TAG = "HomeActivity";
@@ -38,11 +36,16 @@ public class HomeActivity extends Activity {
 	private CharSequence mTitle;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mDrawerTitle;
+	private ActionBar mActionBar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+
+		mActionBar = getActionBar();
+		mActionBar.setDisplayHomeAsUpEnabled(true);
+		mActionBar.setHomeButtonEnabled(true);
 
 		mDrawerItems = getResources().getStringArray(R.array.drawer_menu);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -58,13 +61,13 @@ public class HomeActivity extends Activity {
 			/** Called when a drawer has settled in a completely closed state. */
 			public void onDrawerClosed(View view) {
 				super.onDrawerClosed(view);
-				getActionBar().setTitle(mTitle);
+				mActionBar.setTitle(mTitle);
 			}
 
 			/** Called when a drawer has settled in a completely open state. */
 			public void onDrawerOpened(View drawerView) {
 				super.onDrawerOpened(drawerView);
-				getActionBar().setTitle(mDrawerTitle);
+				mActionBar.setTitle(mDrawerTitle);
 			}
 		};
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
@@ -191,9 +194,6 @@ public class HomeActivity extends Activity {
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 
 		//noinspection SimplifiableIfStatement
@@ -201,7 +201,7 @@ public class HomeActivity extends Activity {
 			return true;
 		}
 
-		return super.onOptionsItemSelected(item);
+		return mDrawerToggle.onOptionsItemSelected(item);
 	}
 
 	@Override
