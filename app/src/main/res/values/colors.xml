@@ -6,7 +6,6 @@
     <!-- main color references -->
 	<color name="transparent">#0000</color>
 	<color name="transparent_white">#26FFFFFF</color> 
-	<color name="transparent_green">#CC7DF082</color>
 	<color name="transparent_white_60">#99FFFFFF</color>
 	<color name="transparent_black">#4D000000</color> 
 	<color name="transparent_black_1A">#1A000000</color> 
@@ -26,9 +25,16 @@
 	<color name="dark_blue">#101B3D</color>
 	<color name="beige">#F5EACA</color>
 	<color name="green">#009188</color>
+	<color name="transparent_green">#80009188</color>
+	<color name="light_green">#00DDCF</color>
 
 
-	
+	<color name="blue1">#85B8DC</color>
+	<color name="blue2">#4198D4</color>
+	<color name="blue3">#3174A1</color>
+	<color name="blue4">#163449</color>
+	<color name="blue5">#00233B</color>
+
 <!-- 	
 	<color name="gray_light_a50">#80F1ECE8</color>     	
 	<color name="color_white_a50">#80FFFFFF</color>

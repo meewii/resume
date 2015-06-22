@@ -1,0 +1,32 @@
+[
+  {
+    "companyName": "5stein",
+    "jobPosition": {
+      "de" :  "Android & Web Programmererin",
+      "en" :  "Android & Web Programmer",
+      "fr" :  "Programmeuse web & Android"
+    },
+    "startingDate": 1434090206,
+    "endingDate": 1434990206
+  },
+  {
+    "companyName": "Citizenside",
+    "jobPosition": {
+      "de" :  "Webdesigner & graphic designer",
+      "en" :  "Webdesigner & graphic designer",
+      "fr" :  "Intégratrice & Graphiste web"
+    },
+    "startingDate": 1434190206,
+    "endingDate": 1434915206
+  },
+  {
+    "companyName": "Abaca Press",
+    "jobPosition": {
+      "de" :  "Webmaster & assistant project manager",
+      "en" :  "Webmaster & assistant project manager",
+      "fr" :  "Assistante chef de projet & webmaster"
+    },
+    "startingDate": 1434190206,
+    "endingDate": 1434915206
+  }
+]

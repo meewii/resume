@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -25,6 +26,7 @@ import com.sinfreu.marie.resume.fragments.HomeFragment;
 import com.sinfreu.marie.resume.fragments.InterestsFragment;
 import com.sinfreu.marie.resume.fragments.SkillsFragment;
 import com.sinfreu.marie.resume.fragments.WorkXpFragment;
+import com.sinfreu.marie.resume.singletons.App;
 
 public class HomeActivity extends Activity {
 
@@ -42,6 +44,8 @@ public class HomeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+
+		App.init(this);
 
 		mActionBar = getActionBar();
 		mActionBar.setDisplayHomeAsUpEnabled(true);
@@ -79,7 +83,7 @@ public class HomeActivity extends Activity {
 		// Set the list's click listener
 		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
-		selectItem(0);
+		selectItem(App.getLastNavChoice());
 
 	}
 
@@ -116,6 +120,7 @@ public class HomeActivity extends Activity {
 				fragment = new HomeFragment();
 		}
 
+		App.setLastNavChoice(position);
 		trans.replace(R.id.container, fragment);
 		trans.commit();
 
@@ -198,7 +203,8 @@ public class HomeActivity extends Activity {
 
 		//noinspection SimplifiableIfStatement
 		if (id == R.id.action_settings) {
-			return true;
+			Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
+			startActivity(intent);
 		}
 
 		return mDrawerToggle.onOptionsItemSelected(item);

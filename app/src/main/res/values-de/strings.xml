@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Marie’s resume</string>
+    <string name="title_home">Hallo!</string>
+    <string name="francais">Français</string>
+    <string name="english">English</string>
+    <string name="deutsch">Deutsch</string>
 </resources>

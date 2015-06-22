@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_xlarge"
+    >
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="@dimen/fz_xlarge"
+        />
+
+    <TextView
+        android:id="@+id/tvJobPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCompanyName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="@dimen/fz_large"
+        />
+
+    <TextView
+        android:id="@+id/tvStartingDate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvJobPosition"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:textSize="@dimen/fz_medium"
+        />
+
+    <TextView
+        android:id="@+id/tvEndingDate"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvJobPosition"
+        android:layout_toRightOf="@+id/tvStartingDate"
+        android:layout_toEndOf="@+id/tvStartingDate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="@dimen/fz_medium"
+        />
+
+</RelativeLayout>

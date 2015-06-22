@@ -17,6 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.sinfreu.marie.resume.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="locale"
+            android:label="@string/title_settings"
+            android:parentActivityName="com.sinfreu.marie.resume.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sinfreu.marie.resume.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>

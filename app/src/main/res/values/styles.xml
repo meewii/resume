@@ -1,20 +1,16 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light">
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
         <item name="android:actionBarStyle">@style/ActionBarStyle</item>
         <!--<item name="android:actionBarSize">@dimen/height_header</item>-->
     </style>
 
     <!-- ActionBar styles -->
-    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">@color/green</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/height_header</item>
-        <!--<item name="android:paddingTop">0dp</item>-->
-        <!--<item name="android:paddingBottom">0dp</item>-->
-        <!--<item name="android:scaleType">fitStart</item>-->
-        <!--<item name="android:titleTextStyle">@style/ActionBarTitleText</item>-->
+        <item name="android:layout_height">@dimen/height_small</item>
     </style>
 
     <!-- ActionBar title text -->

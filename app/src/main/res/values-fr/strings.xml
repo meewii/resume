@@ -4,9 +4,14 @@
     <string name="action_settings">Paramètres</string>
     <string name="navigation_drawer_close">Fermer le menu</string>
     <string name="navigation_drawer_open">Ouvrir le menu</string>
-    <string name="title_home">Accueil</string>
+    <string name="title_home">Bonjour !</string>
     <string name="title_work_xp">Expérience pro</string>
     <string name="title_formation">Formation</string>
     <string name="title_interests">Hobbys</string>
     <string name="title_skills">Compétences</string>
+    <string name="setting_languages">Langues :</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="english">English</string>
+    <string name="francais">Français</string>
+    <string name="title_settings">Paramètres</string>
 </resources>
