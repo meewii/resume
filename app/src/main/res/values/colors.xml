@@ -35,6 +35,9 @@
 	<color name="blue4">#163449</color>
 	<color name="blue5">#00233B</color>
 
+    <color name="primary">#3174A1</color>
+    <color name="primaryDark">#163449</color>
+
 <!-- 	
 	<color name="gray_light_a50">#80F1ECE8</color>     	
 	<color name="color_white_a50">#80FFFFFF</color>

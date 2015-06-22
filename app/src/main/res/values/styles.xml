@@ -1,23 +1,23 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:actionBarStyle">@style/ActionBarStyle</item>
-        <!--<item name="android:actionBarSize">@dimen/height_header</item>-->
+        &lt;!&ndash;<item name="android:actionBarSize">@dimen/height_header</item>&ndash;&gt;
     </style>
 
-    <!-- ActionBar styles -->
-    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
-        <item name="android:background">@color/green</item>
+    &lt;!&ndash; ActionBar styles &ndash;&gt;
+    <style name="ActionBarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/orange</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/height_small</item>
     </style>
-
-    <!-- ActionBar title text -->
+-->
+   <!-- &lt;!&ndash; ActionBar title text &ndash;&gt;
     <style name="ActionBarTitleText">
         <item name="android:textColor">@color/text_titles</item>
         <item name="android:textSize">@dimen/fz_xlarge</item>
-    </style>
+    </style>-->
 
 
 
@@ -29,5 +29,34 @@
         <item name="android:layout_height">60dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+
+
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:textSize">@dimen/fz_large</item>
+    </style>
+
+
+
+
+
+
+    <style name="CustomAppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+    </style>
+
 
 </resources>

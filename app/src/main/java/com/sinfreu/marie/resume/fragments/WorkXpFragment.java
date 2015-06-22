@@ -32,7 +32,7 @@ public class WorkXpFragment extends Fragment {
 		View rootView = inflater.inflate(
 				R.layout.fragment_work_xp, container, false);
 
-		ListView lvXp = (ListView) rootView.findViewById(R.id.lv_xp);
+		ListView lvXp = (ListView) rootView.findViewById(R.id.lvWorkXp);
 
 		String lang = App.getStringPreference("lang");
 

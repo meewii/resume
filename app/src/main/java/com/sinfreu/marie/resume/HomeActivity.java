@@ -1,7 +1,6 @@
 package com.sinfreu.marie.resume;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
@@ -21,6 +20,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+
 import com.sinfreu.marie.resume.fragments.FormationFragment;
 import com.sinfreu.marie.resume.fragments.HomeFragment;
 import com.sinfreu.marie.resume.fragments.InterestsFragment;
@@ -28,7 +30,7 @@ import com.sinfreu.marie.resume.fragments.SkillsFragment;
 import com.sinfreu.marie.resume.fragments.WorkXpFragment;
 import com.sinfreu.marie.resume.singletons.App;
 
-public class HomeActivity extends Activity {
+public class HomeActivity extends ActionBarActivity {
 
 	private String LOG_TAG = "HomeActivity";
 
@@ -38,6 +40,7 @@ public class HomeActivity extends Activity {
 	private CharSequence mTitle;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mDrawerTitle;
+	private Toolbar mToolbar;
 	private ActionBar mActionBar;
 
 	@Override
@@ -47,9 +50,12 @@ public class HomeActivity extends Activity {
 
 		App.init(this);
 
-		mActionBar = getActionBar();
+		mToolbar = (Toolbar) findViewById(R.id.my_awesome_toolbar);
+		setSupportActionBar(mToolbar);
+		mActionBar = getSupportActionBar();
 		mActionBar.setDisplayHomeAsUpEnabled(true);
 		mActionBar.setHomeButtonEnabled(true);
+
 
 		mDrawerItems = getResources().getStringArray(R.array.drawer_menu);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -65,13 +71,13 @@ public class HomeActivity extends Activity {
 			/** Called when a drawer has settled in a completely closed state. */
 			public void onDrawerClosed(View view) {
 				super.onDrawerClosed(view);
-				mActionBar.setTitle(mTitle);
+				mToolbar.setTitle(mTitle);
 			}
 
 			/** Called when a drawer has settled in a completely open state. */
 			public void onDrawerOpened(View drawerView) {
 				super.onDrawerOpened(drawerView);
-				mActionBar.setTitle(mDrawerTitle);
+				mToolbar.setTitle(mDrawerTitle);
 			}
 		};
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
@@ -132,8 +138,8 @@ public class HomeActivity extends Activity {
 
 	public void setTitle(CharSequence title) {
 		mTitle = title;
-		ActionBar actionBar = getActionBar();
-		if(actionBar != null) actionBar.setTitle(mTitle);
+		mActionBar = getSupportActionBar();
+		if(mActionBar != null) mActionBar.setTitle(mTitle);
 	}
 
 	public class DrawerArrayAdapter extends ArrayAdapter<String> {
@@ -178,22 +184,17 @@ public class HomeActivity extends Activity {
 		}
 	}
 
-	public void restoreActionBar() {
-		ActionBar actionBar = getActionBar();
-		if(actionBar != null) {
-			Log.d(LOG_TAG, "ACTIONBAR - restoreActionBar... != null");
-			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-			actionBar.setTitle(mTitle);
-		}
-	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.home, menu);
+		getMenuInflater().inflate(R.menu.global, menu);
 
 		Log.d(LOG_TAG, "ACTIONBAR - onCreateOptionsMenu...");
 
-		restoreActionBar();
+		mActionBar = getSupportActionBar();
+		if(mActionBar != null) {
+			mActionBar.setTitle(mTitle);
+		}
+
 		return super.onCreateOptionsMenu(menu);
 	}
 
