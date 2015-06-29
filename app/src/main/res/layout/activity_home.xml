@@ -27,16 +27,36 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <ListView
-            android:id="@+id/lvDrawer"
-            android:layout_width="240dp"
+        <RelativeLayout
+            android:id="@+id/rlDrawer"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/white"
-            android:choiceMode="singleChoice"
-            android:divider="@color/lime500"
-            android:dividerHeight="1dp"
-            />
+            >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_name"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
+                />
+
+            <ListView
+                android:id="@+id/lvDrawer"
+                android:layout_below="@id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@color/lime500"
+                android:dividerHeight="1dp"
+                />
+
+        </RelativeLayout>
 
     </android.support.v4.widget.DrawerLayout>
 

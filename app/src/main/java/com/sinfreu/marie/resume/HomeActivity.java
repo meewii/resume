@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import android.support.v7.widget.Toolbar;
@@ -37,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
 	private String[] mDrawerItems;
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
+	private RelativeLayout mDrawerContainer;
 	private CharSequence mTitle;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mDrawerTitle;
@@ -53,6 +55,9 @@ public class HomeActivity extends AppCompatActivity {
 		mActionBar = getSupportActionBar();
 		mActionBar.setDisplayHomeAsUpEnabled(true);
 		mActionBar.setHomeButtonEnabled(true);
+
+		mDrawerContainer = (RelativeLayout) findViewById(R.id.rlDrawer);
+
 
 
 		mDrawerItems = getResources().getStringArray(R.array.drawer_menu);
@@ -130,7 +135,7 @@ public class HomeActivity extends AppCompatActivity {
 		// Highlight the selected item, update the title, and close the drawer
 		mDrawerList.setItemChecked(position, true);
 		setTitle(mDrawerItems[position]);
-		mDrawerLayout.closeDrawer(mDrawerList);
+		mDrawerLayout.closeDrawer(mDrawerContainer);
 	}
 
 	public void setTitle(CharSequence title) {

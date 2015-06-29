@@ -23,6 +23,9 @@
     <string name="english">English</string>
     <string name="francais">Français</string>
 
+    <string name="my_email">aaa@aaa.aa</string>
+    <string name="my_name">Marie van Wetter</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
