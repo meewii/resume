@@ -8,7 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -20,7 +21,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.sinfreu.marie.resume.fragments.FormationFragment;
@@ -30,7 +30,7 @@ import com.sinfreu.marie.resume.fragments.SkillsFragment;
 import com.sinfreu.marie.resume.fragments.WorkXpFragment;
 import com.sinfreu.marie.resume.singletons.App;
 
-public class HomeActivity extends ActionBarActivity {
+public class HomeActivity extends AppCompatActivity {
 
 	private String LOG_TAG = "HomeActivity";
 
@@ -61,7 +61,6 @@ public class HomeActivity extends ActionBarActivity {
 		mDrawerToggle = new ActionBarDrawerToggle(
 				this,
 				mDrawerLayout,
-				R.drawable.ic_drawer,
 				R.string.navigation_drawer_open,
 				R.string.navigation_drawer_close
 		) {
