@@ -23,8 +23,7 @@ import java.util.ArrayList;
 
 public class WorkXpFragment extends Fragment {
 
-	public WorkXpFragment() {
-	}
+	private final String LOG_TAG = "WorkXpFragment";
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,7 +34,6 @@ public class WorkXpFragment extends Fragment {
 		ListView lvXp = (ListView) rootView.findViewById(R.id.lvWorkXp);
 
 		String lang = App.getStringPreference("lang");
-
 
 		JobXpModel jxm = JobXpModel.getInstance(getActivity(), lang);
 		ArrayList<JobXp> jobs = jxm.getJobXpList();

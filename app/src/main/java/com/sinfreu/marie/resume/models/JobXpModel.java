@@ -14,6 +14,8 @@ import java.util.ArrayList;
 
 public class JobXpModel {
 
+	private static final String LOG_TAG = "JobXpModel";
+
 	Context context;
 	String mLang;
 	private ArrayList<JobXp> mJobXpList = new ArrayList<>();
@@ -24,6 +26,13 @@ public class JobXpModel {
 	}
 
 	public static JobXpModel getInstance(Context context, String lang) {
+		if(singleton == null) {
+			Log.i(LOG_TAG, "LANG - 1st Instance - lang: " + lang);
+		}
+		else if(!lang.contentEquals(singleton.mLang)) {
+			Log.w(LOG_TAG, "LANG - getInstance - lang: " + lang + ", mLang: " + singleton.mLang);
+		}
+
 		// refresh instance if the language settings changed
 		if(singleton == null || !lang.contentEquals(singleton.mLang)) {
 			singleton = new JobXpModel(context);

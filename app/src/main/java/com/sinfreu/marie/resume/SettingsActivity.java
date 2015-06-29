@@ -71,13 +71,7 @@ public class SettingsActivity extends ActionBarActivity {
 	}
 
 	public void setLocale(String lang) {
-		App.setPreference("lang", lang);
-
-		Resources res = getResources();
-		DisplayMetrics dm = res.getDisplayMetrics();
-		Configuration conf = res.getConfiguration();
-		conf.locale = new Locale(lang);
-		res.updateConfiguration(conf, dm);
+		App.setLocale(lang);
 
 		Intent refresh = new Intent(this, HomeActivity.class);
 		startActivity(refresh);

@@ -48,8 +48,6 @@ public class HomeActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		App.init(this);
-
 		mToolbar = (Toolbar) findViewById(R.id.my_awesome_toolbar);
 		setSupportActionBar(mToolbar);
 		mActionBar = getSupportActionBar();
