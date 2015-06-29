@@ -1,28 +1,32 @@
 <resources>
 
-    <!--&lt;!&ndash; Base application theme. &ndash;&gt;
-    <style name="CustomAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
-        &lt;!&ndash;<item name="android:actionBarSize">@dimen/height_header</item>&ndash;&gt;
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
     </style>
 
-    &lt;!&ndash; ActionBar styles &ndash;&gt;
-    <style name="ActionBarStyle" parent="Theme.AppCompat.Light">
-        <item name="android:background">@color/orange</item>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+    </style>
+
+
+    <style name="ListView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/height_small</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
--->
-   <!-- &lt;!&ndash; ActionBar title text &ndash;&gt;
-    <style name="ActionBarTitleText">
-        <item name="android:textColor">@color/text_titles</item>
-        <item name="android:textSize">@dimen/fz_xlarge</item>
-    </style>-->
 
-
-
-
-
+    <style name="ListView.WorkXp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
 
     <style name="ListItem">
         <item name="android:layout_width">match_parent</item>
@@ -38,25 +42,12 @@
         <item name="android:textSize">@dimen/fz_large</item>
     </style>
 
-
-
-
-
-
-    <style name="CustomAppTheme" parent="Theme.AppCompat">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primaryDark</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="windowActionBar">false</item>
+    <style name="Text.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/fz_xlarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
     </style>
-
-
-    <style name="ToolbarTheme" parent="Theme.AppCompat">
-        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
-        <item name="actionMenuTextColor">@color/abc_primary_text_material_dark</item>
-        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
-    </style>
-
 
 </resources>

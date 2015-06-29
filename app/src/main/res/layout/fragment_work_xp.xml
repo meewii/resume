@@ -2,11 +2,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/bg">
 
     <ListView
         android:id="@+id/lvWorkXp"
-        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/bg"
+        android:choiceMode="singleChoice"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
         />
 
 </LinearLayout>

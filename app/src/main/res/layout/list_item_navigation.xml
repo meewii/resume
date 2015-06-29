@@ -9,6 +9,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
         android:textSize="@dimen/fz_menu"
+        android:textColor="@color/lime900"
         />
 
 </LinearLayout>

@@ -1,15 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/height_xlarge"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
     >
 
     <TextView
         android:id="@+id/tvCompanyName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:textSize="@dimen/fz_xlarge"
+        style="@style/Text.Title"
         />
 
     <TextView
@@ -41,6 +39,7 @@
         android:layout_toEndOf="@+id/tvStartingDate"
         android:layout_marginLeft="5dp"
         android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
         android:textSize="@dimen/fz_medium"
         />
 

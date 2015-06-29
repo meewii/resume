@@ -20,23 +20,41 @@
 	<color name="black">#000</color>
 	<color name="black80">#C000</color>
 
-	<color name="orange">#E8B300</color>
-	<color name="light_blue">#C0D8FD</color>
-	<color name="dark_blue">#101B3D</color>
-	<color name="beige">#F5EACA</color>
-	<color name="green">#009188</color>
-	<color name="transparent_green">#80009188</color>
-	<color name="light_green">#00DDCF</color>
+	<!--<color name="orange">#E8B300</color>-->
+	<!--<color name="light_blue">#C0D8FD</color>-->
+	<!--<color name="dark_blue">#101B3D</color>-->
+	<!--<color name="beige">#F5EACA</color>-->
+	<!--<color name="green">#009188</color>-->
+	<!--<color name="transparent_green">#80009188</color>-->
+	<!--<color name="light_green">#00DDCF</color>-->
+
+	<!--<color name="blue1">#85B8DC</color>-->
+	<!--<color name="blue2">#4198D4</color>-->
+	<!--<color name="blue3">#3174A1</color>-->
+	<!--<color name="blue4">#163449</color>-->
+	<!--<color name="blue5">#00233B</color>-->
+
+	<color name="red1">#f9fbe7</color>
+
+	<color name="lime50">#f9fbe7</color>
+	<color name="lime200">#e6ee9c</color>
+	<color name="lime400">#d4e157</color>
+	<color name="lime500">#cddc39</color>
+	<color name="lime600">#c0ca33</color>
+	<color name="lime700">#afb42b</color>
+	<color name="lime900">#827717</color>
+
+	<color name="A100">#f4ff81</color>
+	<color name="A200">#eeff41</color>
+	<color name="A400">#c6ff00</color>
+	<color name="A700">#aeea00</color>
 
 
-	<color name="blue1">#85B8DC</color>
-	<color name="blue2">#4198D4</color>
-	<color name="blue3">#3174A1</color>
-	<color name="blue4">#163449</color>
-	<color name="blue5">#00233B</color>
+    <color name="primary">@color/lime500</color>
+    <color name="primaryDark">@color/black</color>
+    <color name="accent">@color/A400</color>
+    <color name="bg">@color/lime50</color>
 
-    <color name="primary">#3174A1</color>
-    <color name="primaryDark">#163449</color>
 
 <!-- 	
 	<color name="gray_light_a50">#80F1ECE8</color>     	
@@ -46,8 +64,8 @@
 	
 
 	<!-- used colors -->
-   	<color name="text_main">@color/black</color>	
-   	<color name="text_titles">@color/dark_blue</color>
+   	<color name="text_main">@color/black</color>
+   	<color name="text_titles">@color/white</color>
 
    	<color name="text_hint">@color/gray_dark</color>	
    	<color name="text_inactive">@color/gray_dark</color>	
